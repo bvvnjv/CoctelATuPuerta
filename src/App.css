@@ -1,0 +1,56 @@
+:root {
+  --primary-orange: #f69500;
+  --bg-cream: #f1e9dc;
+  --text-dark: #000000;
+  --font-regular: 'Lexend', sans-serif;
+}
+
+body {
+  font-family: var(--font-regular);
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+/* Fondo fijo con opacidad */
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/fondo1.png'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1; /* Lo mantiene al fondo */
+}
+
+/* Botón corporativo personalizado */
+.btn-orange {
+  background-color: var(--primary-orange);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #d17e00; /* Un tono más oscuro para el hover */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Estilo para las tarjetas */
+.product-card {
+  border-left: 5px solid var(--primary-orange);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(246, 149, 0, 0.2) !important;
+}
+
+.text-orange {
+  color: var(--primary-orange) !important;
+}
